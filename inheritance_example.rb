@@ -18,6 +18,12 @@ class Vehicle
 end
 
 class Car < Vehicle
+
+  def initialize
+    super
+    @fuel = 50
+  end
+
   def honk_horn
     puts "Beeeeeeep!"
   end
