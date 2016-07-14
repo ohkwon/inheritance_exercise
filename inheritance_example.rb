@@ -22,6 +22,8 @@ class Car < Vehicle
   def initialize
     super
     @fuel = 50
+    @make = "Porsche"
+    @model = "911 Carrera"
   end
 
   def honk_horn
@@ -30,6 +32,14 @@ class Car < Vehicle
 end
 
 class Bike < Vehicle
+
+  def initialize
+    super
+    @type = "Road Bike"
+    @weight = 15
+    @gears = true
+  end
+
   def ring_bell
     puts "Ring ring!"
   end
